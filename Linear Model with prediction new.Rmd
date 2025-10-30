@@ -75,6 +75,12 @@ cor(SIMS~GRIP,data=data)
 ### Inferntial Results
 
 ```{r}
-model.1 <- lm(SIMS~GRIP,data=data)
-summary.lm(model.1)
+model.2 <- lm(SIMS~GRIP,data=data)
+summary.lm(model.2)
+```
+
+### Linear Fit Model 2
+
+```{r}
+BasicNN + geom_point() + ggtitle("SIMS~GRIP") + theme(plot.title = element_text(hjust = 0.5, size = 20 )) + geom_smooth(method=lm)
 ```
