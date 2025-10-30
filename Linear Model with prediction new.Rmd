@@ -122,3 +122,16 @@ anova(model.2,model.3)
 ```
 
 The P-value for models 2 & 3 (0.000000001495) are smaller than models 1 & 3(0.0000000004994), and it tells us that model 3 is the most accurate model out of all three models.
+
+
+### Model1~model2
+
+```{r}
+anova(model.1,model.2)
+```
+
+The RSS stand for their residual sum of squares erros of model2 is greater than in model 1. With a differance of -25.189
+
+### Conclusion
+
+We dealt with comparing models. the comparisons required the models to be vested. Even if they aren't you con tell with one is the better model. With the data being in 3 different models. SIMS~ARMS, SIMS~GRIP, and SIMS~ARM+GRIP. Using prediction code to see the values with scatterplots to see the lines that are the best fit, then used anova to compare all the models and it showed in the end that model 3 is the best accuracy out of all the models.
