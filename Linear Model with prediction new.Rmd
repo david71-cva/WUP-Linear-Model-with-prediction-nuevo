@@ -65,3 +65,10 @@ BasicNN <- ggplot(data,aes(y=SIMS,x=GRIP))
 ```{r}
 BasicNN + geom_point() + ggtitle("SIMS vs GRIP") + theme(plot.title = element_text(hjust = 0.5, size = 20))
 ```
+
+### Numerical results
+
+```{r}
+cor(SIMS~GRIP,data=data)
+```
+
