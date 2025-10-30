@@ -84,3 +84,13 @@ summary.lm(model.2)
 ```{r}
 BasicNN + geom_point() + ggtitle("SIMS~GRIP") + theme(plot.title = element_text(hjust = 0.5, size = 20 )) + geom_smooth(method=lm)
 ```
+
+### Model.3 SIMS~ARM+GRIP
+
+### Numerical results
+
+```{r}
+cor(SIMS~ARM+GRIP,data=data)
+```
+
+The correlation for model 3 is higher compared to model and too model 1. The correlation is better when usuing both models
