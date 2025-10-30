@@ -29,3 +29,12 @@ BasicNN + geom_point() + ggtitle("SIMS vs ARM") + theme(plot.title = element_tex
 ```{r}
 cor(SIMS~ARM,data=data)
 ```
+
+
+### Inferntial Results
+
+```{r}
+model.1 <- lm(SIMS~ARM,data=data)
+summary.lm(model.1)
+```
+
