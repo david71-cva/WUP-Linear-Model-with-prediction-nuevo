@@ -94,3 +94,11 @@ cor(SIMS~ARM+GRIP,data=data)
 ```
 
 The correlation for model 3 is higher compared to model and too model 1. The correlation is better when usuing both models
+
+### Inferntial Results
+
+```{r}
+model.3 <- lm(SIMS~GRIP,data=data)
+summary.lm(model.3)
+```
+
